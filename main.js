@@ -7,7 +7,7 @@ const button = document.getElementById('btn');
 let allBooks = [];
 let id;
 
-class book {
+class Book {
     id = this.id;
 
     name = this.name;
@@ -55,7 +55,6 @@ const refreshDOM = () => {
 };
 
 window.onload = refreshDOM;
-
 button.addEventListener('click', (e) => {
   e.preventDefault();
   const name = bookTitle.value;
@@ -78,7 +77,7 @@ button.addEventListener('click', (e) => {
 
     allBooks.unshift(newBook);
     localStorage.setItem('bookList', JSON.stringify(allBooks));
-    bookContainer.innerHTML = '';
+    bookList.innerHTML = '';
     refreshDOM();
   }
 });
