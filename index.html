@@ -11,26 +11,22 @@
     <section>
     <h1>Awesome books</h1>
     <div class="booklist">
-    <ul class="books" id="books">
-    
-
+    <ul class="book-list" id="book-list">
+        <!-- We are going to add the book list -->
     </ul>
 </div>
 </section>
 
 <form class = "book-form" id ="book-form">
-
-    <!-- <div class="form-group">
-        <input type="text" id="id" class="form-control" placeholder="ID">
-    </div> -->
     <div class="form-group">
-        <input type="text" id="title" class="form-control" placeholder="Title">
+        <input type="text" id="title" class="form-control" placeholder="Title" required>
     </div>
-
+     <br>
     <div class="form-group">
-        <input type="text" id="author"  class="form-control" placeholder="Author">
+        <input type="text" id="author"  class="form-control" placeholder="Author" required>
     </div>
-    <input type="submit" value="Add" class="btn">
+    <br>
+    <button  type="button" class="btn" id="btn">Add</button>
 
 </form>
 <script src="main.js"></script>
