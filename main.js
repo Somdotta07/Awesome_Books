@@ -4,8 +4,8 @@ import Add from './modules/add.js';
 
 const add = new Add();
 const remove = new Remove();
-const createNew = document.querySelector('btn');
-const bookContainer = document.querySelector('book-list');
+const createNew = document.getElementById('btn');
+const bookContainer = document.getElementById('book-list');
 let allBooks = [];
 if (localStorage.getItem('bookList') === null) {
   localStorage.setItem('bookList', []);
