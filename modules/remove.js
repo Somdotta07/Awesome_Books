@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 export default class Remove {
   remove = (id) => {
     let allBooks = JSON.parse(localStorage.getItem('bookList'));

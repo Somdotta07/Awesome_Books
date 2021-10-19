@@ -1,8 +1,8 @@
 /* eslint-disable linebreak-style */
-import Book from './Book.js';
+import Book from './book.js';
 
-const bookTitle = document.querySelector('#bookname');
-const bookAuthor = document.querySelector('#authorname');
+const bookTitle = document.getElementById('title');
+const bookAuthor = document.getElementById('author');
 let allBooks;
 export default class Add {
 add = () => {
