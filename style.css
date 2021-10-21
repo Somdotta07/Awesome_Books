@@ -93,3 +93,16 @@ form button {
 .btn {
   float: right;
 }
+
+footer {
+  border: 3px solid black;
+  margin: 2%;
+  padding-left: 2%;
+  text-align: left;
+  position: fixed;
+  width: 96%;
+  bottom: 1%;
+  padding-top: 0.4%;
+  color: black;
+  font-weight: 600;
+}

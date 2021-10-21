@@ -4,8 +4,15 @@ import Add from './modules/add.js';
 
 const add = new Add();
 const remove = new Remove();
+const { DateTime } = luxon;
+const now = DateTime.now();
+const bookContainer = document.createElement('ul');
+bookContainer.classList += 'book-list';
+const heading = document.querySelector('h1');
+const mainContainer = document.querySelector('main');
+const time = document.querySelector('#current-time');
 const createNew = document.getElementById('btn');
-const bookContainer = document.getElementById('book-list');
+// const bookContainer = document.getElementById('book-list');
 let allBooks = [];
 if (localStorage.getItem('bookList') === null) {
   localStorage.setItem('bookList', []);
@@ -14,6 +21,9 @@ if (localStorage.getItem('id') === null) {
   localStorage.setItem('id', JSON.stringify(0));
 }
 const refreshDOM = () => {
+  heading.innerText = 'All Awesome Books';
+  bookContainer.innerHTML = '';
+  mainContainer.innerHTML = '';
   allBooks = JSON.parse(localStorage.getItem('bookList'));
   allBooks.forEach((book) => {
     const bookTitle = book.name;
@@ -37,6 +47,12 @@ const refreshDOM = () => {
     bookContainer.appendChild(newBook);
   });
 };
+// For current time
+window.onload = () => {
+  refreshDOM();
+  time.innerHTML = `${now.c.month} ${now.c.day} ${now.c.year}, ${now.c.hour}:${now.c.minute}:${now.c.second}`;
+};
+
 window.onload = refreshDOM;
 createNew.addEventListener('click', (e) => {
   e.preventDefault();
