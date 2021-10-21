@@ -1,9 +1,9 @@
 import Remove from './modules/remove.js';
 import Add from './modules/add.js';
-import luxon from './luxon.js';
 
 const add = new Add();
 const remove = new Remove();
+// eslint-disable-next-line
 const { DateTime } = luxon;
 const now = DateTime.now();
 const mainPage = document.getElementById('main-page');
