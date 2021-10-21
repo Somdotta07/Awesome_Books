@@ -3,7 +3,7 @@ import Add from './modules/add.js';
 
 const add = new Add();
 const remove = new Remove();
-// eslint-disable-next-line
+// eslint-disable-next-line no-undef
 const { DateTime } = luxon;
 const now = DateTime.now();
 const mainPage = document.getElementById('main-page');
