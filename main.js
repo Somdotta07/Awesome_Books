@@ -47,7 +47,7 @@ const refreshDOM = () => {
     newBook.appendChild(removeBtn);
     bookContainer.appendChild(newBook);
     bookContainer.id = 'book-container';
-    bookContainer.classList += 'book-info';
+    // bookContainer.classList += 'book-list';
     mainContainer.appendChild(bookContainer);
   });
 };
