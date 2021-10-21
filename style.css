@@ -53,7 +53,7 @@ h2 {
 }
 
 .book-list li:nth-child(even) {
-  background-color: rgb(244, 244, 253);
+  background-color: rgb(182, 182, 248);
 }
 
 .line {
