@@ -22,6 +22,7 @@ if (localStorage.getItem('bookList') === null) {
 if (localStorage.getItem('id') === null) {
   localStorage.setItem('id', JSON.stringify(0));
 }
+// book list
 const refreshDOM = () => {
   heading.innerText = 'All Awesome Books';
   bookContainer.innerHTML = '';
@@ -55,21 +56,13 @@ window.onload = () => {
   time.innerHTML = `${now.c.month} ${now.c.day} ${now.c.year}, ${now.c.hour}:${now.c.minute}:${now.c.second}`;
 };
 
-// window.onload = refreshDOM;
-// createNew.addEventListener('click', (e) => {
-//   e.preventDefault();
-//   add.add();
-//   bookContainer.innerHTML = '';
-//   refreshDOM();
-// });
-
 mainPage.addEventListener('click', () => {
   refreshDOM();
 });
-
+// Add form
 createBook.addEventListener('click', (e) => {
   e.preventDefault();
-  h2.innerHTML = 'Add a New Book';
+  heading.innerHTML = 'Add a New Book';
   mainContainer.innerHTML = '';
   const form = document.createElement('form');
   form.classList += 'book-form';
@@ -104,4 +97,29 @@ createBook.addEventListener('click', (e) => {
     titleInput.value = '';
     authorInput.value = '';
   });
+});
+
+// Create Contact page
+contactPage.addEventListener('click', (e) => {
+  e.preventDefault();
+  heading.innerHTML = 'Contact Information';
+  mainContainer.innerHTML = '';
+  const paragraph = document.createElement('p');
+  paragraph.innerHTML = 'For more information please contact us on: ';
+  const list = document.createElement('li');
+  list.innerHTML = 'munsamibenge65@gmail.com';
+  const list2 = document.createElement('li');
+  list2.innerHTML = '+2609657676761';
+  const list3 = document.createElement('li');
+  const ull = document.createElement('ul');
+  ull.classList += 'info text-left';
+  list3.innerHTML = 'Welcome to our address';
+  list.classList += 'myList';
+  list2.classList += 'myList';
+  list3.classList += 'myList';
+  mainContainer.appendChild(paragraph);
+  ull.appendChild(list);
+  ull.appendChild(list2);
+  ull.appendChild(list3);
+  mainContainer.appendChild(ull);
 });
