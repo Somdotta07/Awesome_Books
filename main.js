@@ -28,8 +28,8 @@ const refreshDOM = () => {
     const newBook = document.createElement('li');
     const newTitle = document.createElement('p');
     const newAuthor = document.createElement('p');
-    newTitle.innerText = bookTitle;
-    newAuthor.innerText = bookAuthor;
+    newTitle.innerText = `"${bookTitle}" \u00A0 `;
+    newAuthor.innerText = ` by ${bookAuthor}`;
     newBook.id = bookId;
     newBook.appendChild(newTitle);
     newBook.appendChild(newAuthor);
