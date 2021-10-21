@@ -4,6 +4,7 @@ import Add from './modules/add.js';
 
 const add = new Add();
 const remove = new Remove();
+// eslint-disable-next-line
 const { DateTime } = luxon;
 const now = DateTime.now();
 const mainPage = document.getElementById('main-page');
@@ -40,14 +41,14 @@ const refreshDOM = () => {
     });
     const newBook = document.createElement('li');
     const newTitle = document.createElement('p');
-    const newAuthor = document.createElement('p');
-    newTitle.innerText = `"${bookTitle}" \u00A0 `;
-    newAuthor.innerText = ` by ${bookAuthor}`;
+    newTitle.innerHTML = `"${(bookTitle)}" by ${(bookAuthor)}`;
     newBook.id = bookId;
     newBook.appendChild(newTitle);
-    newBook.appendChild(newAuthor);
     newBook.appendChild(removeBtn);
     bookContainer.appendChild(newBook);
+    bookContainer.id = 'book-container';
+    bookContainer.classList += 'book-info';
+    mainContainer.appendChild(bookContainer);
   });
 };
 // For current time
@@ -86,7 +87,7 @@ createBook.addEventListener('click', (e) => {
   const addBTN = document.createElement('button');
   addBTN.id = 'btn';
   addBTN.type = 'button';
-  addBTN.innerText = 'Submit';
+  addBTN.innerText = 'Add';
   addBTN.classList += 'btn';
   form.appendChild(addBTN);
 
