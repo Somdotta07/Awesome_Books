@@ -30,8 +30,8 @@ nav {
 }
 
 .nav-right {
-  display:flex;
-  justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
   gap: 20px;
   margin: 0 20px;
 }
@@ -66,8 +66,7 @@ main {
   margin-bottom: 16px;
 }
 
-h1
- {
+h1 {
   text-align: center;
   font-size: 32px;
 }
@@ -107,20 +106,19 @@ button,
   padding: 5px 12px;
 }
 
-
-form input  {
+form input {
   display: block;
   margin: 8px;
   height: 35px;
   padding: 5px 15px;
   border: 2px solid black;
 }
+
 form .btn {
   display: flex;
-  margin-left: 240px;
+  margin-left: 290px;
   position: fixed;
 }
-
 
 footer {
   margin: 2%;

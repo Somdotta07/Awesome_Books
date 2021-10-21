@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import Book from './book.js';
 
 let allBooks;
