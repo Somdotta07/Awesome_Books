@@ -87,7 +87,7 @@ form button {
 button,
 .btn {
   border: 2px solid black;
-  border-radius: 2px;
+  border-radius: 10px;
   background: white;
   box-shadow: 2px 2px;
   font-size: 16px;
