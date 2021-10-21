@@ -1,10 +1,8 @@
-/* eslint-disable linebreak-style */
 import Remove from './modules/remove.js';
 import Add from './modules/add.js';
 
 const add = new Add();
 const remove = new Remove();
-// eslint-disable-next-line
 const { DateTime } = luxon;
 const now = DateTime.now();
 const mainPage = document.getElementById('main-page');
@@ -15,7 +13,7 @@ bookContainer.classList += 'book-list';
 const heading = document.querySelector('h1');
 const mainContainer = document.querySelector('main');
 const time = document.querySelector('#current-time');
-// const bookContainer = document.getElementById('book-list');
+
 let allBooks = [];
 if (localStorage.getItem('bookList') === null) {
   localStorage.setItem('bookList', []);
@@ -47,7 +45,6 @@ const refreshDOM = () => {
     newBook.appendChild(removeBtn);
     bookContainer.appendChild(newBook);
     bookContainer.id = 'book-container';
-    // bookContainer.classList += 'book-list';
     mainContainer.appendChild(bookContainer);
   });
 };
