@@ -4,36 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Awesome Books</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="awesome-books">
-    <h1>All awesome books</h1>
-    <div class="booklist">
-    <ul class="book-list" id="book-list">
-        <!-- We are going to add the book list -->
-    </ul>
-</div>
-</section>
-
-<div class="line"></div>
-<section>
-<form class = "book-form" id ="book-form">
-    <h2>Add a new book</h2>
-    <div class="form-group">
-        <input type="text" id="title" class="form-control" placeholder="Title" required>
+    <header class="header">
+        <nav>
+            <div class="logo">Awesome Books</div>
+            <ul class="nav-right">
+                <li class="top-nav"><a id="main-page" class="nav-link" href="#">List</a></li>
+                <li class="top-nav"><a id="add-book" class="nav-link" href="#">Add Book</a></li>
+                <li class="top-nav"><a id="contact-page" class="nav-link" href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="date">
+        <p id="current-time" class="current-time"></p>
     </div>
-     <br>
-    <div class="form-group">
-        <input type="text" id="author"  class="form-control" placeholder="Author" required>
-    </div>
-    <br>
-    <button  type="button" class="btn" id="btn">Add</button>
+    <h1 class="main-heading">Our Awesome Book List App</h1>
+    <main>   
+    </main>
+    <footer>Copyright of Somdotta And Munsa</footer>
 
-</form>
-</section>
 <script type="module" src="main.js"></script>
+<script src="luxon.js"></script>
 </body>
-
 </html>
