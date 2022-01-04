@@ -1,5 +1,5 @@
 # Awesome_Books
-Plain JavaScript with Objects 
+Plain JavaScript with Objects : You can Add books and delete books from the virtual library.
 ![screenshot](https://user-images.githubusercontent.com/84907743/139919995-ef34f80e-ce35-42b5-9640-02190661dc16.png)
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
@@ -16,16 +16,16 @@ Navigate to the index.html page and open it with live server
 ### Prerequisites
 Vscode
 ## Authors
+👤 Somdotta Sarkar
+- [Github](https://github.com/Somdotta07)
+- [Twitter](https://github.com/Somdotta07)
+- [LinkedIn](www.linkedin.com/in/somdottasarkar)
 👤 Munsa Mibenge:
 - GitHub: [@Munsa1](https://github.com/munsa1)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 Somdotta Sarkar
 
-- [Github](https://github.com/Somdotta07)
-- [Twitter](https://github.com/Somdotta07)
-- [LinkedIn](www.linkedin.com/in/somdottasarkar)
 
 ## 🤝 Contributing
 
