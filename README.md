@@ -12,8 +12,7 @@ Navigate to the index.html page and open it with live server
 - CSS
 
 ## Live Demo
-To check the webpage click on the live demo: 
-[ https://somdotta07.github.io/Awesome_Books/]
+[To check the webpage click on the live demo:](https://somdotta07.github.io/Awesome_Books/)
 ### Prerequisites
 Vscode
 ## Authors
